@@ -9,13 +9,16 @@ body{
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
   border-radius: 20px;
-  max-width: 1080px;
-  margin: 50px auto;
+  max-width: 100%;
+  margin: 85px;
 }
 
 header{
   display: flex;
   justify-content: space-between;
+  margin: 50px auto;
+  border-bottom: #EAEAEA solid 1px;
+  padding: 55px;
 
   .company{
     display: flex;
@@ -39,6 +42,100 @@ header{
       display: flex;
       align-items: center;
       margin: 0 10px 0 10px;
+    }
+  }
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  margin: 60px;
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .search-bar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 250px;
+      height: 45px;
+      border: #F3F3F3 solid 1px;
+      border-radius: 10px;
+      padding: 0 15px;
+      gap: 10px;
+
+      .input {
+        display: flex;
+
+        input {
+          border: none;
+          border-radius: 10px;
+          background: transparent;
+          outline: none;
+          font-family: 'Inter', sans-serif;
+          font-size: 17px;
+          width: 100%;
+          color: #C4C4C4;
+
+          &::placeholder {
+            color: #9B9B9B;
+          }
+
+          &:focus {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+
+  .goods {
+    margin: 60px;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid #F3F3F3;
+      padding: 33px;
+      width: 210px;
+      height: 260px;
+      border-radius: 40px;
+
+      .item-title {
+        font-family: 'Inter', system-ui;
+        font-size: 17px;
+        font-weight: 400;
+      }
+
+      .item-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        .item-price {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .button-add {
+          button {
+            background: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+          }
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
     }
   }
 }

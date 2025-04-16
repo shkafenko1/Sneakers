@@ -30,8 +30,20 @@ function App() {
             </div>
         </header>
         <main>
+            <div className="main-header">
+                <div className="main-header_title">
+                    <h1>Все кроссовки</h1>
+                </div>
+                <div className="search-bar">
+                    <div className="search-icon">
+                        <img src="/public/assets/cards/search.svg" alt="search"/>
+                    </div>
+                    <div className="input">
+                        <input type="text" placeholder="Поиск..."/>
+                    </div>
+                </div>
+            </div>
             <div className="goods">
-                <h1>Все кроссовки</h1>
                 <div className="card">
                     <div className="item-pic">
                             <img src="/public/assets/cards/nikegreen.svg" alt="item"/>
@@ -45,7 +57,7 @@ function App() {
                             <b>12 999 руб.</b>
                         </div>
                         <div className="button-add">
-                            <button>
+                            <button className="button-add_button">
                                 <img src="/public/assets/cards/add.svg" alt="add"/>
                             </button>
                         </div>
